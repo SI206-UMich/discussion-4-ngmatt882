@@ -42,7 +42,7 @@ class Rectangle():
 
     # YOUR CODE HERE
     def area(self):
-        if not verify_input():
+        if not self.verify_input():
             return "Invalid input"
         return self.height * self.width
 
@@ -55,7 +55,7 @@ class Rectangle():
 
     # YOUR CODE HERE
     def perimeter(self):
-        if not verify_input():
+        if not self.verify_input():
             return "Invalid input"
         return 2 * (self.height + self.width)
     
@@ -73,6 +73,13 @@ def main():
     print("Area:", r.area())
     print("Perimeter:", r.perimeter())
     print()
+
+    r = Rectangle(1.5, 1.5)
+    print(r)
+    print("Area:", r.area())
+    print("Perimeter:", r.perimeter())
+    print()
+
 
 if __name__ == "__main__":
     main()
